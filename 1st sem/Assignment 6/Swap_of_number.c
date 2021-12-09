@@ -4,7 +4,7 @@ int main()
 {
     int num = 0, s = 0, result = 0;
     printf("Enter a number:\n");
-    scanf("%d\n", &num);
+    scanf("%d", &num);
     result = swap(num);
     printf("The result is %d", result);
 }
