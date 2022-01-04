@@ -2,7 +2,7 @@
 int fun();
 int main()
 {
-    int result = 0, ran = 0, num = 1, store = 0;
+    int result = 0, ran = 0, num = 1;
     printf("Enter the range:\n");
     scanf("%d", &ran);
     printf("The series is like following: \n");
