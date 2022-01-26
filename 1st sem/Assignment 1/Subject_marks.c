@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<conio.h>
+// #include<conio.h>
 
 int main()
 {
@@ -20,7 +20,7 @@ int main()
    printf("Enter your marks in History: \n");
    scanf("%d", &His);
    printf("The percentage of your History marks is %d\n", (His*100)/50);
-   printf("Your aggregate marks is %f\n", (Ben+Eng+Geo+Pol+His)/5);
+   printf("Your aggregate marks is %f\n", (float)(Ben+Eng+Geo+Pol+His)/5);
    //getch();
    
    return 0; 
