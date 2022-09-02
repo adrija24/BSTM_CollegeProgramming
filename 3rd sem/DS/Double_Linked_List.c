@@ -253,20 +253,19 @@ int count()
 }
 void reverse()
 {
-    struct node *p;
-    p = start;
-    while (p->next != NULL)
+    struct node *p1, *p2;
+    p1 = start;
+    p2 = p1-> next;
+    p1->prev = p2;
+    p1-> next = NULL;
+    while(p2 != NULL)
     {
-        p = p->next;
+        p2->prev = p2-> next;
+        p2-> next = p1;
+        p1 = p2;
+        p2 = p2->prev;
     }
-    while (p != NULL)
-    {
-        printf("%d", p->info);
-        if (p->prev != NULL)
-        {
-            printf(" <-> ");
-        }
-        p = p->prev;
-    }
+    start = p1;
     printf("\n");
+    display();
 }
