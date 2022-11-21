@@ -14,7 +14,7 @@ void main()
     while (1)
     {
         printf("\n1. Push\n");
-        printf("2. Pop]n\n");
+        printf("2. Pop\n");
         printf("3. Display\n");
         printf("4. Exit\n");
         printf("\nEnter your Choice: ");
